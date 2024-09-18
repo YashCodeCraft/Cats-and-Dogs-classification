@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Data
+*.csv
+*.h5
+*.jpg
+*.png
+
+# Environment files
+.env
+venv/
+*.env
+
+# macOS
+.DS_Store
+
+# System-specific
+Thumbs.db
