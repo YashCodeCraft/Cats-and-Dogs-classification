@@ -17,14 +17,14 @@ from keras.preprocessing.image import ImageDataGenerator
 # Extracting ImageData for TRAIN data
 
 imageTRAINgen = ImageDataGenerator(rescale=(1./255), horizontal_flip=True, shear_range=0.2, zoom_range=0.2)
-training_set = imageTRAINgen.flow_from_directory('/content/drive/MyDrive/DataSets/Cat_and_Dog/train',
+training_set = imageTRAINgen.flow_from_directory('train data path',
                                                  batch_size=32, target_size=(64, 64)
                                                  , class_mode='binary')
 
 # Extracting ImageData for TEST data
 
 imageTESTgen = ImageDataGenerator(rescale=(1./255), shear_range=0.2, horizontal_flip=True, zoom_range=0.2)
-tesing_set = imageTESTgen.flow_from_directory('/content/drive/MyDrive/DataSets/Cat_and_Dog/test',
+tesing_set = imageTESTgen.flow_from_directory('test data path',
                                               target_size=(64, 64), batch_size=32
                                               , class_mode='binary')
 
